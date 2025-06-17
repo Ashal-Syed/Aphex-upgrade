@@ -5,8 +5,9 @@
   --foreground: #171717;
 }
 
+/* Components  */
 .btn {
-  @apply text-white font-bold text-sm flex items-center justify-center px-6 py-2 bg-gradient-to-tl from-sky-600 to-blue-900 rounded-[35px] text-center w-fit shadow-[16px_16px_36px_0px_rgba(0,2,17,1.00)];
+  @apply font-bold text-sm flex items-center justify-center px-6 py-2 bg-gradient-to-tl from-sky-600 to-blue-900 rounded-[35px] text-center w-fit shadow-[16px_16px_36px_0px_rgba(0,2,17,1.00)];
 }
 .btn-light {
   @apply text-black font-bold text-sm flex items-center justify-center px-6 py-2 bg-gradient-to-tl from-sky-600 to-white rounded-[35px] text-center w-fit shadow-[16px_16px_36px_0px_rgba(0,2,17,1.00)];
@@ -19,6 +20,32 @@
 .pdc_card {
   @apply bg-white/5 rounded-2xl shadow-[0px_16px_36px_0px_rgba(0,2,17,1.00)] outline-1 outline-white/10;
 }
+
+.services_description {
+  @apply list-disc pl-6 font-light text-sm flex flex-col gap-1.5
+}
+
+/* Typography  */
+.text-heading {
+  @apply text-[44px] font-bold;
+}
+
+.text-body {
+  @apply text-gray-200 text-base;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    @apply bg-[#080539] text-white;
+    /* @apply bg-black text-white; */
+    font-family: Inter, Arial, system-ui;
+  }
+}
+
+/* .text-description-one {
+  @apply text-gray-200 text-md;
+} */
 
 /* @theme inline {
   --color-background: var(--background);
