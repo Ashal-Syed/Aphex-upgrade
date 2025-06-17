@@ -3,7 +3,7 @@ import React from 'react'
 
 const seminars = () => {
   return (
-    <section className='w-[1000px] h-[500px] mt-10'>
+    <section className='w-full h-[500px] mt-10'>
     <Glass_Card title='Coming Soon' description="" headingLevel='h6' />
     </section>
   )
