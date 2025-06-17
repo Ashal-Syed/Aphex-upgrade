@@ -13,7 +13,7 @@ const Services_Component = () => {
       </div>
       <div data-label="Row 1" className="w-full h-[650px] flex justify-center gap-5 p-5">
         <Service_Card
-          photo="/assets/images/quality.jpg"
+          photo="/assets/Images/quality.jpg"
           link="/about_us"
           title="Quality Management Services"
           description={
@@ -27,7 +27,7 @@ const Services_Component = () => {
           }
         />
         <Service_Card
-          photo="/assets/images/cmc_advisory.jpg"
+          photo="/assets/Images/cmc_advisory.jpg"
           link="/about_us"
           title="CMC Advisory"
           description={
@@ -41,7 +41,7 @@ const Services_Component = () => {
           }
         />
         <Service_Card
-          photo="/assets/images/cmc_regulatory.jpg"
+          photo="/assets/Images/cmc_regulatory.jpg"
           link="/about_us"
           title="CMC Regulatory"
           description={
@@ -56,7 +56,7 @@ const Services_Component = () => {
       </div>
       <div data-label="Row 2" className="w-full h-[650px] flex justify-center gap-5 p-5">
         <Service_Card
-          photo="/assets/images/training.jpg"
+          photo="/assets/Images/training.jpg"
           link="/about_us"
           title="Training"
           description={
@@ -71,7 +71,7 @@ const Services_Component = () => {
           }
         />
         <Service_Card
-          photo="/assets/images/recruitment.jpg"
+          photo="/assets/Images/recruitment.jpg"
           link="/about_us"
           title="Recruitment"
           description={

@@ -9,7 +9,7 @@ export interface Service {
 const services: Service[] = [
   {
     title: "Quality Management Services",
-    photo: "/assets/images/quality.jpg",
+    photo: "/assets/Images/quality.jpg",
     description: (
       <ul className="services_description">
         <li>Vendor Audits</li>
@@ -22,7 +22,7 @@ const services: Service[] = [
   },
   {
     title: "CMC Advisory",
-    photo: "/assets/images/cmc_advisory.jpg",
+    photo: "/assets/Images/cmc_advisory.jpg",
     description: (
       <ul className="services_description">
         <li>Method Development</li>
@@ -35,7 +35,7 @@ const services: Service[] = [
   },
   {
     title: "CMC Regulatory",
-    photo: "/assets/images/cmc_regulatory.jpg",
+    photo: "/assets/Images/cmc_regulatory.jpg",
     description: (
       <ul className="services_description">
         <li>CTD Compilation for New Drug Application</li>
@@ -47,7 +47,7 @@ const services: Service[] = [
   },
   {
     title: "Training",
-    photo: "/assets/images/training.jpg",
+    photo: "/assets/Images/training.jpg",
     description: (
       <ul className="services_description">
         <li>Quality Culture Training</li>
@@ -61,7 +61,7 @@ const services: Service[] = [
   },
   {
     title: "Recruitment",
-    photo: "/assets/images/recruitment.jpg",
+    photo: "/assets/Images/recruitment.jpg",
     description: (
       <ul className="services_description">
         <li>
