@@ -14,7 +14,7 @@
 }
 
 .glass_card {
-  @apply bg-gradient-to-br from-white/10 to-white/0 rounded-[9.60px] shadow-[4px_4px_12px_0px_rgba(0,0,0,0.40)] outline-offset-[-0.50px];
+  @apply bg-gradient-to-br from-white/10 to-white/0 rounded-xl shadow-[4px_4px_12px_0px_rgba(0,0,0,0.40)] outline-offset-[-0.50px];
 }
 
 .pdc_card {
@@ -27,7 +27,7 @@
 
 /* Typography  */
 .text-heading {
-  @apply text-[44px] font-bold;
+  @apply text-[25px] md:text-[44px] font-bold;
 }
 
 .text-body {

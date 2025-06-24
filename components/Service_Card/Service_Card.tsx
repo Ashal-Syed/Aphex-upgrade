@@ -21,15 +21,15 @@ const Service_Card = ({ photo, title, description, empty, link }: ServicePrompts
   }
 
   return (
-    <div data-label="Card" className="w-full h-full glass_card overflow-hidden">
-      <div data-label="Image" className="w-full h-1/2 relative">
-        <Image src={photo} alt="Quality" fill className="object-cover" />
+    <div data-label="Card" className="w-full h-full glass_card flex flex-col justify-between gap-5 pb-5">
+      <div data-label="Image" className="w-full h-[150px] md:h-[300px] relative">
+        <Image src={photo} alt="Quality" fill className="object-cover rounded-xl" />
       </div>
-      <div data-label="Content" className="w-full h-3/8 px-5 pt-5 flex flex-col justify-center gap-5">
+      <div data-label="Content" className="w-full px-5 flex flex-col justify-center gap-5">
         <h1 className="font-bold text-xl">{title}</h1>
         {description}
       </div>
-      <div data-label="Button" className="h-1/8 w-full flex items-center justify-center">
+      <div data-label="Button" className="w-full flex items-center justify-center">
         <Button
           text="More Information"
           prompt={<ArrowIcon variant="small" />}

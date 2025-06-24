@@ -3,7 +3,7 @@ import Service_Card from "../Service_Card/Service_Card";
 
 const Services_Component = () => {
   return (
-    <section data-label="Full Component" className="w-full p-5">
+    <section data-label="Full Component" className="w-full py-5 flex flex-col gap-5">
       <div data-label="Heading" className="w-full flex flex-col justify-center items-center">
         <h1 className="text-heading">Our Services</h1>
         <p className="text-body">
@@ -11,7 +11,7 @@ const Services_Component = () => {
           unique requirements.
         </p>
       </div>
-      <div data-label="Row 1" className="w-full h-[650px] flex justify-center gap-5 p-5">
+      <div data-label="Row 1" className="w-full flex flex-col lg:flex-row justify-center gap-5 lg:p-5">
         <Service_Card
           photo="/assets/Images/quality.jpg"
           link="/about_us"
@@ -54,7 +54,7 @@ const Services_Component = () => {
           }
         />
       </div>
-      <div data-label="Row 2" className="w-full h-[650px] flex justify-center gap-5 p-5">
+      <div data-label="Row 2" className="w-full flex flex-col lg:flex-row justify-center gap-5 lg:p-5">
         <Service_Card
           photo="/assets/Images/training.jpg"
           link="/about_us"
