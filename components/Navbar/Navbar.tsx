@@ -19,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full h-30 py-9 flex justify-between items-center">
+    <nav className="w-full h-30 py-10 flex justify-between items-center">
       <Link
         href="/"
         className="h-full inline-flex justify-left items-center font-medium text-xl"

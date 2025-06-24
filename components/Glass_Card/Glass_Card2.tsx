@@ -1,5 +1,4 @@
 import React from "react";
-
 import ComingSoon from "@/components/ComingSoon/ComingSoon";
 
 interface CardProps {
