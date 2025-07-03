@@ -6,7 +6,7 @@ import Services_Component from "@/components/Services_Component/Services_Compone
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 px-10 lg:px-45">
       <Hero />
       <PDC_Card />
       <Services_Component />

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Button from "../UI/Button/Button";
@@ -10,6 +10,7 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -20,8 +21,21 @@ const Navbar = () => {
     { name: "eQMS (CloudTheApp)", path: "/eqms" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full h-30 py-10 flex justify-between items-center relative">
+    <nav
+      className={`w-full h-30 py-10 px-10 lg:px-45 flex justify-between items-center sticky top-0 z-50 transition ${
+        scrolled ? "backdrop-blur-xl" : ""
+      }`}
+    >
       <Link
         href="/"
         className="h-full inline-flex justify-left items-center font-medium text-xl"

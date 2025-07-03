@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <div className="w-full px-10 lg:px-45 flex flex-col"> {/* w-[1500px] max-w-screen-xl */}
+        {/* <div className="w-full px-10 lg:px-45 flex flex-col"> w-[1500px] max-w-screen-xl */}
           <Navbar />
           <main>{children}</main>
           <Footer />
-        </div>
+        {/* </div> */}
       </body>
     </html>
   );
